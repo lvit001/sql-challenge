@@ -44,3 +44,4 @@
 - Used JOIN and WHERE/OR functions to filter the departments table by Sales and Development departments and populate the required columns from the three joined tables
 ### Question 8
 - Used aggregate function JOIN, along with GROUP BY and ORDER BY to determine the frequency of certain last names and list them in descending order by the highest frequency of the last name.
+- Used some code from [here](https://www.w3schools.com/sql/sql_groupby.asp) for help with the count, group by, and order by functions
