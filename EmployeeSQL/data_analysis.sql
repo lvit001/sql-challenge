@@ -38,3 +38,35 @@ de.dept_no=d.dept_no
 LEFT JOIN employees as e ON
 de.emp_no=e.emp_no
 ORDER BY emp_no;
+
+-- 5) List first name, last name, and sex of each employee whose 
+-- first name is Hercules and whose last name begins with the letter B.
+
+SELECT first_name, last_name, sex
+FROM employees
+WHERE first_name = 'Hercules' AND
+last_name LIKE 'B%'
+
+-- 6) List each employee in the Sales department, including 
+-- their employee number, last name, and first name.
+
+SELECT emp_no, last_name, first_name
+FROM employees
+WHERE emp_no IN
+	(
+	SELECT emp_no
+	FROM dept_emp
+	WHERE dept_no IN
+		(
+		SELECT dept_no
+		FROM departments
+		WHERE dept_name = 'Sales'
+	)
+);
+
+
+
+
+
+
+
