@@ -1,6 +1,7 @@
 # SQL-challenge: Module 9 Challenge Assignment
 ## Data Modeling
 - ERD was created using [QuickDBD](https://app.quickdatabasediagrams.com/#/d/y8yFQ3)
+- ![image](https://github.com/lvit001/sql-challenge/assets/140283164/a09af62e-9d77-4916-a30c-204c37fd7adc)
 ### Primary Keys
 - Created primary keys for three of the tables: departments (dept_no), employees (emp_no), titles (title_id)
 ### Foreign Keys
